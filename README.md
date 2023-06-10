@@ -73,7 +73,7 @@ RegisterNumber: 212222230014
 
 ### UPCOUNTER:
 ```
-module upc(clk,A);
+module up(clk,A);
 input clk;
 output reg[0:3]A;
 always@(posedge clk)
@@ -92,10 +92,10 @@ input clk;
 output reg[0:3]A;
 always@(posedge clk)
 begin
-	A[0]=((((~A[1])&(~A[2]))&A[3])^A[0]);
-	A[1]=(((A[2])&(A[3]))^A[1]);
-	A[2]=((A[3])^A[2]);
-	A[3]=1^A[3];
+		A[0]=((((~A[1])&(~A[2]))&(~A[3]))^A[0]);
+		A[1]=(((~A[2])&(~A[3]))^A[1]);
+		A[2]=((~A[3])^A[2]);
+		A[3]=1^A[3];
 end
 endmodule
 ```
@@ -103,32 +103,32 @@ endmodule
 
 ### UPCOUNTER
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/fc8075b8-4649-4c45-b52f-5bea4a47e3a4)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/9a1a08f5-b607-4b54-8286-84cc517fada3)
 
 ### DOWNCOUNER
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/e9419073-e104-4c1f-becb-8f1d29068bfc)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/6443a233-97be-4bcd-8aab-58a4d9287577)
 
 ### TIMING DIGRAMS FOR COUNTER
 
 ### UPCOUNTER 
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/6280cfb8-2499-4e5d-9967-4f7b81b47598)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/6c944048-bdf0-46d5-b999-b47305bbe874)
 
 ### DOWNCOUNTER
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/704947c9-5f98-482b-b470-995d29925d82)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/c79e964c-7aee-47af-b353-63372dd33704)
 
 ### TRUTH TABLE
 
 ### UP COUNTER: 
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/bc2ba4a0-c92a-4427-a99d-10b36618900a)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/c3409f65-8c64-4d2b-8118-b62c6a51d406)
 
 ### DOWN COUNTER: 
 
-![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/36d1a1b5-332b-486b-adcc-b76693775bcc)
+![image](https://github.com/Anandanaruvi/Exp-7-Synchornous-counters-/assets/120443233/1396c897-1064-46a2-ad24-aef82cd835f8)
 
-### RESULTS 
+### RESULT 
 
 Thus Synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
